@@ -1,0 +1,198 @@
+.Head{
+    display: flex;
+    flex-wrap: wrap;  
+    background-color: white;
+    
+}
+
+.header{
+    
+    position:fixed;
+    right:20px;
+    left:10px;
+    top:0px;
+    height:60px;
+    display:flex;
+    flex-direction: row;
+    margin-bottom:15px;
+    background-color: white;
+    border-bottom:solid;
+    border-bottom-width:1px;
+    border-color:rgb(228, 228, 228);
+    z-index:2;
+}
+
+.start{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mid{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items: center;
+
+    
+}
+.searchbox{
+    flex:1;
+    margin-top:-2px;
+    max-width:500px;
+    height:36px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(227, 227, 227);
+    border-top-left-radius:19px;
+    border-bottom-left-radius:19px;
+    font-size:15px;
+    padding-left:10px;
+    
+
+}
+.searchbox:focus{
+    outline: none;
+}
+.button1{
+    height:40px;
+    width:63px;
+    margin-top:-2px;
+    border-color:rgb(210, 210, 210);
+    border-width:1px;
+    border-style:solid;
+    border-left:none;
+    border-top-right-radius:19px;
+    border-bottom-right-radius:19px;
+    margin-left:0px;
+}
+.searchbox::placeholder{
+    font-family:roboto;
+    font-weight:400; 
+    font-size:15px;
+}
+.end{
+    width: 200px;
+    display:flex;
+    display:relative;
+    align-items:center;
+    flex-direction:row;
+    justify-content:space-around;
+    max-width:220px;
+    
+}
+
+.hamburger_logo{
+    height:24px;
+    margin-left:13px;
+    margin-right:27px;
+   
+}
+.youtube_logo{
+    height:20px;
+    margin-right:30px;
+    
+}
+.end_button{
+    height: 40px;
+    width:40px;
+    background-color:white;
+    border:none;
+    position:relative;
+}
+.end_button:hover{
+    cursor:pointer;
+}
+.notifications{
+    background-color: rgb(212, 14, 14);
+    color:white;
+    font-size:12px;
+    border-radius:15px;
+    position:absolute;
+    padding-inline:5px;
+    padding-top:1px;
+    padding-bottom: 1px;
+    right:2px;
+    top:5px;
+}
+.end1{
+    height:25px;
+}
+.end2{
+    height:34px;
+    margin-right:20px;
+    border-radius: 20px;
+}
+.mic_icon{
+    height:30px;
+    width:25px;
+    
+}
+.search_icon{
+    height:25px;
+}
+
+.button1:hover,.button2:hover{
+    cursor:pointer;
+}
+.button2{
+    border-radius:25px;
+    width:38px;
+    margin-top:-2px;
+    border-width:0px;
+    margin-left:10px;
+    background-color:rgb(247, 247, 247)
+}
+
+.scroll{
+    background-color: white;
+    position: fixed;
+    display: inline;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    
+}
+.scroll ul{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 90px;
+    padding: 10px;
+    border: 2px;
+    border-color: black;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    
+    list-style-type: none ;
+    background-color: rgb(255, 255, 255);
+    
+}
+.scroll ul li{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    padding: 5px 14px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+}
+.scroll ul li a:hover{
+    background-color: hsl(0, 0%, 75%);
+}
+.scroll ul li.active a{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 80%);
+}
